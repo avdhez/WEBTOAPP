@@ -2,9 +2,8 @@ name: Build and Release Flutter Android App
 
 on:
   push:
-    tags:
-      - 'v*' # Trigger on version tags like v1.0, v2.0, etc.
-
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
